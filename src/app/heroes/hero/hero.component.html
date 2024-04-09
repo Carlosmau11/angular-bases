@@ -1,0 +1,19 @@
+<h1 class="mb-4">Super Hero</h1>
+
+<dl>
+  <td class="fw-bold">Nombre:</td>
+  <dd>{{ name }}</dd>
+
+  <td class="fw-bold">Edad:</td>
+  <dd>{{ age }}</dd>
+
+  <td class="fw-bold">Método:</td>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <td class="fw-bold">Capitalizado:</td>
+  <dd>{{ capitalizedName }}</dd>
+</dl>
+
+
+<button class="btn btn-primary mx-2" (click)="changenHero()">Cambiar nombre</button>
+<button class="btn btn-primary" (click)="changenAge()">Cambiar edad</button>
