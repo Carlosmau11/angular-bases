@@ -1,0 +1,15 @@
+<ul class="list-group">
+  <li *ngFor="let character of characterList; let i = index; let isFirt = first; let isLast = last"
+
+  class="list-group-item d-flex justify-content-between"
+  [ngClass]="{'list-group-item-success': isFirt}">
+  <span class="text-primary">{{i + 1}}. </span>
+  <strong>Name: </strong>
+  <span>{{character.name}} </span>
+  <span> - </span>
+  <strong>Power: </strong>
+  <span>{{character.power}}</span>
+
+  <button class="btn btn-danger ms-3" (click)="onDeleteCharacter(i)">X</button>
+</li>
+</ul>
